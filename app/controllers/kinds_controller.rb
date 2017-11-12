@@ -3,8 +3,10 @@ class KindsController < ApplicationController
 
   # GET /kinds
   # GET /kinds.json
-  def index
-    @kinds = Kind.all
+  def index#nome do arquivo
+    @meu_nome = "Thiago Hocsis"
+    @kinds = Kind.all #SELECT "kinds".* FROM "kinds" - guarda todos os kinds na variavel de instancia @kinds
+
   end
 
   # GET /kinds/1

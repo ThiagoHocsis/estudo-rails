@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  
+  #definindo página inicialou raiz
+  get 'home/index'
+  root 'home#index'
+
   resources :phones
   resources :addresses
   resources :contacts
