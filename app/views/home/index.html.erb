@@ -1,8 +1,12 @@
 <h1>Seja bem-vindo !</h1>
 
+<%= mostrar_meu_nome %>
+
+<%= somar_dois(5) %>
+
 <ul>
-	<li><a href="http://localhost:4000/kinds"/>Tipos</li>
-	<li><a href="http://localhost:4000/contacts"/>Contatos</li>
-	<li><a href="http://localhost:4000/addresses"/>Endereços</li>
-	<li><a href="http://localhost:4000/phones"/>Telefones</li>
+	<li><%=link_to "Tipos", kinds_path %></li> 
+	<li><%=link_to "Contatos", contacts_path %></li>
+	<li><%=link_to "Endereços", addresses_path %></li>
+	<li><%=link_to "Telefones", phones_path %></li>
 </ul>

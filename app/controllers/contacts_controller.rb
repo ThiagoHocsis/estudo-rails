@@ -5,7 +5,10 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     @contacts = Contact.all
+    @meu_nome = "Thiago Hocsis"
   end
+
+
 
   # GET /contacts/1
   # GET /contacts/1.json
@@ -15,10 +18,12 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   def new
     @contact = Contact.new
+    options_for_select
   end
 
   # GET /contacts/1/edit
   def edit
+    options_for_select
   end
 
   # POST /contacts
@@ -71,4 +76,10 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:name, :email, :kind_id, :rmk)
     end
+
+    private
+
+      def options_for_select
+        @kind_options_for_select = Kind.all
+      end
 end
