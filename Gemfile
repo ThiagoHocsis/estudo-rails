@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
+#gem localização
+gem 'rails-i18n', '~>4.0.0'
+#O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum. 
+gem 'lerolero_generator'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 #A library for generating fake data such a name, addresses, and phone numbers.

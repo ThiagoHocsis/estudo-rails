@@ -70,7 +70,9 @@ class KindsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    # kind_params é um filtro
     def kind_params
+      #params é tudo que vem da view, require seleciona apenas o kind, e dentro do kind é permitido apenas o campo description
       params.require(:kind).permit(:description)
     end
 end
