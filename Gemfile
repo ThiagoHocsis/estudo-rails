@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7.1'
 #gem localização
 gem 'rails-i18n', '~>4.0.0'
+#Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
+gem "cocoon"
 #O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum. 
 gem 'lerolero_generator'
 # Use sqlite3 as the database for Active Record
@@ -46,6 +48,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  #Rails >= 3 pry initializer 
+  gem 'pry-rails'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

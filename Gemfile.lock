@@ -41,6 +41,8 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (9.1.0)
+    cocoon (1.2.11)
+    coderay (1.1.2)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -74,12 +76,18 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     rack (1.6.8)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -160,11 +168,13 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  cocoon
   coffee-rails (~> 4.1.0)
   faker
   jbuilder (~> 2.0)
   jquery-rails
   lerolero_generator
+  pry-rails
   rails (= 4.2.7.1)
   rails-i18n (~> 4.0.0)
   sass-rails (~> 5.0)
