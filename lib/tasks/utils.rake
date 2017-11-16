@@ -4,7 +4,7 @@ namespace :utils do
 
   	puts "Gerando os contatos (Contacts)..."
 
-	10.times do |i|
+	100.times do |i|
 		Contact.create!(  name: Faker::DragonBall.character,
 						  email: Faker::Internet.email,
 						  kind: Kind.all.sample,
