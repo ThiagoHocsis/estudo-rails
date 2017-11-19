@@ -1,27 +1,29 @@
-<p id="notice"><%= notice %></p>
-<% a = 1 + 3%>
-<h1>Listando os tipos // <%=@meu_nome%> // <%=a%></h1>
+  <div class="basic-grey">
+  <script>
+    $.notify("<%= notice%>", "success")
+  </script>
+<h1><%= "#{t('messages.listing')} #{@kinds.model.model_name.human(count:@kinds.size)}"%></h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <thead>
+      <tr>
+        <th><%= Kind.human_attribute_name("description")%></th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
 
   <tbody>
     <% @kinds.each do |kind| %>
-      <tr>
+    <tr style="background: <%= cycle('white','#f0f0f5')%>">
         <td><%= kind.description %></td>
-        <td><%= link_to 'Show', kind %></td>
-        <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
-        <td><%= link_to 'Destroy', kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+       <td><%= link_to t('buttons.edit'), edit_kind_path(kind) %></td>
+       <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: t('messages.confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Kind', new_kind_path %>
+ <%= link_to t('buttons.new'), new_kind_path, class:"btn btn-primary" %>
+ <%= link_to t('buttons.home'), root_path, class:"btn btn-success" %>
+</div>

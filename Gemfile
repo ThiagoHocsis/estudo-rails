@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
+#Translations for the kaminari gem
+gem 'kaminari-i18n'
 #gem localização
 gem 'rails-i18n', '~>4.0.0'
 #⚡ A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps https://github.com/amatsuda/kaminari/…
@@ -32,6 +34,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

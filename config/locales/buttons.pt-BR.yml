@@ -1,7 +1,9 @@
 "pt-BR":
   buttons:
     show: Mostrar
+    save: Salvar
     edit: Editar
     destroy: Apagar
     new: Novo
     back: Voltar
+    home: Inicio
